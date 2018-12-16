@@ -1,7 +1,7 @@
 export default {
   name: 'title',
   components: {},
-  props: [],
+  props: ['name'],
   data () {
     return {
 
