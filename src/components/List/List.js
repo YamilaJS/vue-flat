@@ -2,7 +2,7 @@ export default {
   name: 'list',
   components: {},
   props: {
-    firstName: {
+    list: {
       type: Array,
       default: []
     }
