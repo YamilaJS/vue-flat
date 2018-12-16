@@ -1,7 +1,12 @@
 export default {
   name: 'list',
   components: {},
-  props: [],
+  props: {
+    firstName: {
+      type: Array,
+      default: []
+    }
+  },
   data () {
     return {
 
@@ -14,6 +19,8 @@ export default {
 
   },
   methods: {
-
+    onClickItemHandler (index = 0, value = '') {
+      this.$emit('onClickItemEvent', { index: index, value: value })
+    }
   }
 }
