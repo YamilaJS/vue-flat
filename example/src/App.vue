@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-  
+    <Title text="Vue Flat" />
+    <tag-component text="example text"></tag-component>
+    <btn />
     <List :list="lista" />
 
   </div>

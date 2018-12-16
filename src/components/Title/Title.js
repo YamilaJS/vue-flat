@@ -1,7 +1,9 @@
 export default {
   name: 'title',
   components: {},
-  props: ['name'],
+  props: {
+    text:{type:String,required:true}
+  },
   data () {
     return {
 
