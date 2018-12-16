@@ -1,5 +1,10 @@
 
 <section class="list">
-  <h1>list Component</h1>
+  <h1>List Component</h1>
+
+  <ul>
+    <li v-for="(item, index ) in items" :key="'item'+index" v-text="item" @click="onClickItemHandler(index,value)" />
+    
+  </ul>
 </section>
 
